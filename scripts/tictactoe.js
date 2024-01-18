@@ -112,7 +112,7 @@ $(() => {
       score = { Arnold: 0, Terminator: 0 };
       $btnRestart.text("Restart Game");
     } else {
-      $btnRestart.text("Next Game");
+      $btnRestart.text("Next Round");
     }
     $btnRestart.hide();
   };
