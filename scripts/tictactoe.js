@@ -1,6 +1,4 @@
 $(() => {
-  // console.log("Jquery funkar!");
-
   const $boxes = $(".box");
   const $statusTxt = $("#status");
   const $btnRestart = $("#restart");
@@ -106,7 +104,6 @@ $(() => {
     running = true;
     $statusTxt.text(`Go ahead ${player}`);
 
-    // Clear each box on the board
     $boxes.each(function () {
       $(this).html("");
     });
