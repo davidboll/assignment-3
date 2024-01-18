@@ -106,6 +106,11 @@ $(() => {
     running = true;
     $statusTxt.text(`Go ahead ${player}`);
 
+    // Clear each box on the board
+    $boxes.each(function () {
+      $(this).html("");
+    });
+
     if (score.Arnold === 2 || score.Terminator === 2) {
       score = { Arnold: 0, Terminator: 0 };
       $btnRestart.text("Restart Game");
